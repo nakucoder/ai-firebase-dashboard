@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AI Firebase Dashboard
 
-# Run and deploy your AI Studio app
+A full-stack AI Dashboard integrated with Firebase 
+for Authentication and Storage, connected to a 
+custom Python AI Engine.
 
-This contains everything you need to run your app locally.
+## Tech Stack
+- **Language:** TypeScript
+- **Frontend:** Vite + CSS
+- **Backend:** Firebase (Auth & Storage)
+- **AI Integration:** Google Gemini API
+- **Database:** Firestore
 
-View your app in AI Studio: https://ai.studio/apps/d377b646-0e6c-4f08-abbc-58a8860f438c
+## Features
+- Firebase Authentication for secure user login
+- Cloud Storage integration
+- Real-time AI responses via Gemini API
+- Firestore database with security rules
+- Environment variable protection for API keys
 
-## Run Locally
+## Getting Started
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set `GEMINI_API_KEY` in `.env.local`
+4. Run: `npm run dev`
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Security
+- Firebase config secured via environment variables
+- Firestore security rules implemented
+- API keys excluded from version control via `.gitignore`
